@@ -18,7 +18,20 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="inicio --bs-blue">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#info">Info</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <section id="inicio" class="inicio --bs-blue">
       <div class="row hero">
         <div class="col-md-6 d-flex align-items-center justify-content-center">
           <h1 class="hero-text">
@@ -30,10 +43,9 @@
         </div>
       </div>
     </section>
-    <section class="info">
+    <section id="info" class="info">
       <div class="container">
         <div class="row align-items-center Principal">
-          <!-- Imagen a la izquierda -->
           <div class="col-md-6 d-flex align-items-center Imagen">
             <img src="img/fondoIndigo2.png" alt="Imagen informativa" />
           </div>
@@ -94,7 +106,7 @@
       </div>
     </section>
 
-    <section class="servicios">
+    <section id="servicios" class="servicios">
       <div class="container">
         <div class="row">
           <!-- Tarjeta 1 -->
@@ -226,7 +238,7 @@
     </div>
 
     <!-- Sección Contacto -->
-    <section class="contacto">
+    <section id="contacto" class="contacto">
       <div class="container">
         <h2 class="text-center mb-4">Contáctanos</h2>
         <div class="row justify-content-center">

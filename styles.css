@@ -8,7 +8,13 @@
 body {
   font-family: Arial, sans-serif;
 }
-
+.navbar {
+  background-color: #0000003d !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 /* Hero Section */
 .inicio {
   background-color: #000000;
@@ -107,10 +113,16 @@ section {
 /* Contacto */
 .contacto {
   background-color: #4b0082;
-  color: white;
+  color: white !important;
   text-align: center;
 }
 
+input::placeholder{
+  color: white !important;
+}
+textarea::placeholder{
+  color: white !important;
+}
 .contacto .form-control {
   background-color: #000000;
   color: white;
@@ -156,5 +168,44 @@ section {
 
   .contacto .form-control {
     font-size: 14px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 12vw;
+  }
+
+  .tech-logos {
+    gap: 10px;
+  }
+
+  .service-card {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .contacto .form-control {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 14vw;
+  }
+
+  .service-card {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .contacto .form-control {
+    font-size: 12px;
+  }
+
+  .footer {
+    padding: 10px 0;
   }
 }

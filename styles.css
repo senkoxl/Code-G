@@ -1,0 +1,160 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.inicio {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+}
+.hero {
+  background-color: rgb(0, 0, 0);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 8vw;
+  text-align: center;
+  color: white;
+}
+
+.hero-image img {
+  max-width: 100%;
+}
+
+/* Secciones con mismo tamaño */
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+/* Info Section */
+.info {
+  background-color: #4b0082 !important;
+  text-align: center;
+}
+
+.parrafo-info {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.tech-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.tech-logo {
+  width: 50px;
+  height: auto;
+}
+
+/* Servicios */
+.servicios {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+}
+
+.service-card {
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 20px;
+  background: #6a0dad;
+  color: white;
+  border-radius: 10px;
+}
+
+.service-card:hover {
+  background: #8a2be2;
+}
+
+/* Modales */
+.modal-content {
+  background-color: #000000;
+  color: white;
+}
+
+.modal-backdrop {
+  background: linear-gradient(
+    45deg,
+    #d766d9,
+    #c530d9,
+    #9125d9,
+    #63458c,
+    #393c73
+  );
+  filter: blur(10px);
+}
+
+/* Contacto */
+.contacto {
+  background-color: #4b0082;
+  color: white;
+  text-align: center;
+}
+
+.contacto .form-control {
+  background-color: #000000;
+  color: white;
+  border: none;
+}
+
+.contacto .btn-primary {
+  background-color: #6a0dad;
+  border: none;
+}
+
+/* Footer */
+.footer {
+  background-color: #000000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .social-icons a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #8a2be2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 12vw;
+  }
+
+  .tech-logos {
+    gap: 10px;
+  }
+
+  .service-card {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .contacto .form-control {
+    font-size: 14px;
+  }
+}
